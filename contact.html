@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <style>
+    .contact-hero{ background: linear-gradient(90deg,#001f3f 0%, #004e92 100%); color:#fff; padding:48px 0; }
+    .contact-hero h1{ font-weight:700; }
+    .contact-card { border: 0; box-shadow: 0 6px 20px rgba(2,28,60,0.12); }
+    .map-placeholder{ width:100%; height:220px; border-radius:8px; border:0; }
+    @media (max-width:767px){ .map-placeholder{ height:160px; } }
+    .alert-fixed{ position:relative; transition:opacity 220ms ease-in-out; }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #001f3f;">
+    <div class="container">
+  <a class="navbar-brand" href="index.html" style="color: #fff; font-size: 1.6rem;">Jaggo's Branding</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" style="color:#fff;">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about Us .html" style="color:#fff;">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" style="color:#fff;">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html" style="color:#fff;">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" style="color:#fff;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="height:70px;"></div>
+
+  <header class="contact-hero text-center">
+    <div class="container">
+      <h1>Let's build something great</h1>
+      <p class="lead" style="opacity:0.92;">Send a message with your project details or book a consultation. I'll respond within 24 hours.</p>
+    </div>
+  </header>
+
+  <main class="py-5" >
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card p-4 contact-card">
+            <div id="formAlertContainer"></div>
+            <form id="contactForm" action="https://formspree.io/f/mnngygey" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Project type or subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="6" class="form-control" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary" style="background-color:#001f3f; border:none;">Send Message</button>
+              </div>
+            </form>
+            <div class="mt-3 text-muted small"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3 contact-card mb-3">
+            <h5 class="mb-2">Contact Info</h5>
+            <p ><i class="fas fa-user" style="color: #002b4f;">;</i><a href="mailto:abdullahiabdulrahmon46@gmail.com" style="color:#001f3f;">abdullahiabdulrahmon46@gmail.com</a></p>
+             <p style="color: #001f3f;"><i class="fab fa-whatsapp" style="color: #001f3f;">;</i> <a href="https://wa.me/+2348149377559" style="color: #001f3f;">+234 814 937 7559</a></p>
+          <p style="color:#001f3f;"><i class="fas fa-map-marker-alt" style="color: #001f3f;"></i>  Badagry Lagos, Nigeria</p>
+            <p style="color:#001f3f;"> <i class="fas fa-clock" style="color: #001f3f;">:</i>Mon–Fri 9:00–17:00</p>
+          </div>
+
+          <div class="card p-0 contact-card overflow-hidden">
+            <!-- lightweight map placeholder (editable) -->
+            <iframe class="map-placeholder" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Badagry+nigeria&output=embed" title="Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+  <footer class="mt-5" style="background: #002b4f; color: #fff; padding: 18px 0 10px 0; font-family: montserrat; box-shadow: 0 -2px 12px rgba(0,0,0,0.08);">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 style="font-weight: 700;">About Jaggo's Branding</h5>
+          <p style="font-size: 1rem;">Passionate about creative solutions in graphic and web design. Delivering quality and innovation for every project.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 style="font-weight: 700;">Quick Links</h5>
+          <ul class="list-unstyled" style="text-decoration: underline;">
+            <li><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+            <li><a href="about Us .html" style="color: #fff; text-decoration: none;">About</a></li>
+            <li><a href="services.html" style="color: #fff; text-decoration: none;">Services</a></li>
+            <li><a href="portfolio.html" style="color: #fff; text-decoration: none;">Portfolio</a></li>
+            <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+
+         <div class="col-md-4">
+          <h5 class="fw-bold">Contact & Social</h5>
+         <i class="fas fa-user"> :   <!-- Solid icon --> </i>
+          <a href="mailto:abdullahiabdulrahmon46@gmail.com" class="text-info font-size 1rem" style="color: #7fd8ff; text-decoration: underline;font-size: 1rem; margin-bottom: 8px;" > abdullahiabdulrahmon46@gmail.com</a></p> 
+
+         <p><i class="fab fa-whatsapp"></i> :
+          <a href="https://wa.me/+2348149377559" class="text-info text-decoration-underline">+2348149377559</a>
+          </p>
+
+             <i class="fab fa-tiktok"> </i> :
+             <a href="https://www.tiktok.com/@jaggosbranding5" class="text-info" target="_blank">jaggosbranding5</a></p>
+
+             <p>
+          <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> 
+          :<a href="https://www.facebook.com/jaggosbranding" class="text-info" target="_blank">Facebook</a>
+             </p>
+             
+        </div>
+      </div>
+      
+      <hr style="border-color: #fff; opacity: 0.2; margin-top: 18px;">
+      <div class="text-center">
+  <small style="color: #bbb;">&copy; 2025 Jaggo's Branding. Crafted with passion by Raman Jaggo.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        form.reset();
+        showFormspreeThankYou();
+      } else {
+        response.json().then(function(data) {
+          showFormspreeThankYou(data.error || 'Oops! There was a problem submitting your form');
+        });
+      }
+    }).catch(function() {
+      showFormspreeThankYou('Oops! There was a problem submitting your form');
+    });
+  });
+  function showFormspreeThankYou(msg) {
+    var alert = document.createElement('div');
+    alert.className = 'alert alert-success';
+    alert.textContent = msg || 'Thank you, your message has been submitted!';
+    var container = document.getElementById('formAlertContainer');
+    if (container) {
+      container.innerHTML = '';
+      container.appendChild(alert);
+      setTimeout(function() { alert.style.opacity = 0; }, 3500);
+    }
+  }
+});
+</script>
+</body>
+</html>

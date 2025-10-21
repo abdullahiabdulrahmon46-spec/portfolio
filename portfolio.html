@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+</head>
+<style>
+    .portfolio-hero{ background: linear-gradient(90deg,#001f3f 0%, #004e92 100%); color:#fff; padding:48px 0; }
+    .contact-hero h1{ font-weight:700; }
+    .contact-card { border: 0; box-shadow: 0 6px 20px rgba(2,28,60,0.12); }
+    .map-placeholder{ width:100%; height:220px; border-radius:8px; border:0; }
+    @media (max-width:767px){ .map-placeholder{ height:160px; } }
+    .alert-fixed{ position:relative; transition:opacity 220ms ease-in-out; }
+    .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flyer-card-img {
+  background: #f7fbff;
+  object-fit: contain;
+  border-bottom: 1px solid #e0e6ed;
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 767px) {
+  .flyer-card-img { max-width: fit-content; width: 100%; }
+}
+    </style>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #001f3f;">
+  <div class="container">
+  <a class="navbar-brand" href="index.html" style="color: #fff; font-size: 2rem;">Jaggo's Branding</a>
+        <nav class="navbar navbar-expand-lg" style="background-color: #001f3f;   font-size: 1.15rem;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: #fff;">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about Us .html" style="color: #fff;">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="services.html" style="color: #fff;">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" style="color: #fff;">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: #fff;">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </nav>
+  <div style="height:70px;"></div>
+  <header class="portfolio-hero text-center">
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <p class="lead" style="opacity:0.92;">A showcase of my recent projects and designs.</p>
+    </div>
+    </header>
+
+        
+    <div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/jewelry.jpeg" class="flyer-card-img" alt="Flyer Design 1">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> jewelry Flyer Design</h4>
+          <p class="card-text">  "Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/flyer design 3.jpeg" class="flyer-card-img" alt="Flyer Design 2">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Perfume Flyer Design </h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/Flyer Design2.jpeg" class="flyer-card-img" alt="Flyer Design 3">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Perfume Flyer Design 2</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+.</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/Flyer Design (1).jpeg" class="flyer-card-img" alt="Flyer Design 4">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Necklace Flyer Design </h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/flyer design 4.jpeg" class="flyer-card-img" alt="Flyer Design 5">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Hair Flyer Design </h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+.</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/flyer desgn 5.jpeg" class="flyer-card-img" alt="Flyer Design 6">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Hair Flyer Design  2</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/flyer design 6.jpeg" class="flyer-card-img" alt="Flyer Design 7">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Real Estate Flyer Design  1</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."
+</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/Real Estate Flyers (7).jpeg" class="flyer-card-img" alt="Flyer Design 8">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Real Estate Flyer Design  2</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/yetunde wears.jpg" class="flyer-card-img" alt="Flyer Design 9">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Fashion
+            Flyer Design  1</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion.".</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/ayinke.jpg2.jpg" class="flyer-card-img" alt="Flyer Design 10">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Fashion
+            Flyer Design  2</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Custom Flyer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-4">
+  <div class="row justify-content-center g-4">
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/pic 7.jpeg" class="flyer-card-img" alt="Video Editing">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;">Video Editing</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Video Editing</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-lg border-0 mb-4" style="border-radius: 0.5rem;">
+        <img src="images/pic 6.jpeg" class="flyer-card-img" alt="Websites Design">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #001f3f; font-weight: 700;"> Websites Design</h4>
+          <p class="card-text">"Creative and impactful flyer design crafted to grab attention and deliver key information clearly. Perfect for print or digital promotion."</p>
+          <a href="contact.html" class="btn btn-primary" style="background-color: #001f3f; border: none;">Contact for Websites Design</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form action="https://formspree.io/f/mnngygey" method="POST">
+  <!-- ...existing code... -->
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="mt-5" style="background: #002b4f; color: #fff; padding: 18px 0 10px 0; font-family: montserrat; box-shadow: 0 -2px 12px rgba(0,0,0,0.08);">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 style="font-weight: 700;">About Jaggo's Branding</h5>
+          <p style="font-size: 1rem;">Passionate about creative solutions in graphic and web design. Delivering quality and innovation for every project.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 style="font-weight: 700;">Quick Links</h5>
+          <ul class="list-unstyled" style="text-decoration: underline;">
+            <li><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+            <li><a href="about Us .html" style="color: #fff; text-decoration: none;">About</a></li>
+            <li><a href="services.html" style="color: #fff; text-decoration: none;">Services</a></li>
+            <li><a href="portfolio.html" style="color: #fff; text-decoration: none;">Portfolio</a></li>
+            <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+          <div class="col-md-4">
+          <h5 class="fw-bold">Contact & Social</h5>
+         <i class="fas fa-user"> :   <!-- Solid icon --> </i>
+          <a href="mailto:abdullahiabdulrahmon46@gmail.com" class="text-info font-size 1rem" style="color: #7fd8ff; text-decoration: underline;font-size: 1rem; margin-bottom: 8px;" > abdullahiabdulrahmon46@gmail.com</a></p> 
+
+         <p><i class="fab fa-whatsapp"></i> :
+          <a href="https://wa.me/+2348149377559" class="text-info text-decoration-underline">+2348149377559</a>
+          </p>
+
+             <i class="fab fa-tiktok"> </i> :
+             <a href="https://www.tiktok.com/@jaggosbranding5" class="text-info" target="_blank">jaggosbranding5</a></p>
+
+
+             <p>
+          <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> 
+          :<a href="https://www.facebook.com/jaggosbranding" class="text-info" target="_blank">Facebook</a>
+             </p>
+             
+        </div>
+      </div>
+      
+    </div>
+      </div>
+      <hr style="border-color: #fff; opacity: 0.2; margin-top: 18px;">
+      <div class="text-center">
+  <small style="color: #bbb;">&copy; 2025 Jaggo's Branding. Crafted with passion by Raman Jaggo.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
