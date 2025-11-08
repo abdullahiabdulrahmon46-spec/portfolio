@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -110,7 +111,7 @@
 <!-- Spacer to push content below fixed navbar -->
 <div style="height: 77px;"></div>
 
-<p style="background-color:#002b4f ;  font-size: xx-large; text-align: center ;  color: #fff; font-family: montserrat; padding: 30px;"> Get to know my work, a reflection of my Values, creativity, and Commitment to excellence in every details   </p>
+<p style="background-color:#002b4f ;  font-size: xx-large; text-align: center ;  color: #fff; font-family: montserrat; padding: 30px; margin-top: 40px;"> Get to know my work, a reflection of my Values, creativity, and Commitment to excellence in every details   </p>
 
 <main>
     <div class="container text-center" style="font-family: montserrat;  width: 100  ;" >
@@ -562,5 +563,30 @@ window.addEventListener('DOMContentLoaded', function() {
       </div>
     </div>
   </footer>
+  <!-- Bottom navigation (mobile) -->
+  <nav class="bottom-nav d-lg-none" aria-label="Bottom navigation" style="font-family: montserrat;">
+    <a href="index.html" class="bn-item" data-key="home" title="Home">
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="portfolio.html" class="bn-item" data-key="portfolio" title="Properties">
+      <i class="fa fa-building"></i>
+      <span>Portfolio</span>
+    </a>
+    <a href="services.html" class="bn-item" data-key="services" title="Services">
+      <i class="fa fa-concierge-bell"></i>
+      <span>Services</span>
+    </a>
+    <a href="about.html" class="bn-item" data-key="about" title="About">
+      <i class="fa fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="contact.html" class="bn-item" data-key="contact" title="Contact">
+      <i class="fa fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+  <!-- Bootstrap JS Bundle (with Popper) for navbar and form functionality -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
